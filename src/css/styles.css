@@ -29,6 +29,15 @@ header nav ul li a {
 
 section {
     padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 20%;
+}
+
+img {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
 }
 
 footer {

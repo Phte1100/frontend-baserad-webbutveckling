@@ -19,8 +19,44 @@
     </header>
 
     <section>
-        <h1>Automatisering och publicering</h1>
-        <p>I denna uppgift ska jag skapa en grundstruktur för en webbplats med HTML, CSS, JavaScript och bilder. Jag kommer att använda NodeJs för att automatisera viktiga uppgifter som minifiering av CSS, JavaScript och HTML, samt optimera bilder. Detta innebär att jag ska använda moderna bildformat och se till att min kod fungerar i olika webbläsare. Allt mitt arbete ska kunna återställas med hjälp av "npm install". Målet är att förbereda filerna för publicering på ett effektivt sätt.</p>
+        <h1>Hur jag skapat denna webbplats</h1>
+        <p>Så här skapade jag denna sida:</p>
+        <ol>
+            <li>Jag började med att initiera ett NPM-projekt i min arbetsmapp. Detta gjorde jag genom att först navigera till min mapp i CMD sen skriva "npm init"</li>
+            <li>Använde "npm install parcel --save-dev" för att lägga till Parcel i projektet.</li>
+            <li>Sedan skapade jag en .gitignore-fil som innehöll
+                <ul>
+                    <li>node_modules/</li>
+                    <li>dist/</li>
+                    <li>.parcel-cache/</li>
+                </ul>
+            </li>
+            <li>gjorde ändringar i package.json
+                <ul>
+                    <li>"browserslist": "> 0.5%, last 2 versions, not dead",</li>
+                    <li>"start": "parcel",</li>
+                    <li>"build": "parcel build"</li>
+                    <li>och ändrade "devDependencies"</li>
+                </ul>
+            </li>
+            <li>Sen skapade jag ett nytt repo på Github. Jag skapade efter ett tag en ny branch som heter "utveckling" där jag laddade upp allt.</li>
+            <li>Jag skapade en sharp.config.json och satte bildkavliteten till 80%.</li>
+            <li>Jag skapade en mapp som döptes till src och strukturerade en bra mappstruktur.</li>
+            <li>Jag använde Visual Studio Code för att skapa hemsidan. Jag använde HTML, CSS och JS.</li>
+            <li>Jag lade till 5 JPG-bilder med picture-tagen och dessa konverteras till AVIF och WebP.</li>
+            <li>Jag sammanfogade branch "utveckling" och "master".</li>
+            <li>Kopplade GitHub-repot till Netlify och publicerade webbplatsen med kommandot npm run build.</li>
+        </ol>
+
+        <p>Mina ändringar leder till:</p>
+        <ul>
+            <li>Minifiering av CSS.</li>
+            <li>Transpilering och minifiering av JavaScript.</li>
+            <li>Minifiering av HTML.</li>
+            <li>Optimering av bilder.</li>
+            <li>Bakåtkompabilitet i genererade filer</li>
+            <li>Kopiering av arbetsfiler till mapp för publicering med optimerade filer</li>
+        </ul>
     </section>
 
     <footer>
